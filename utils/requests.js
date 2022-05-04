@@ -2,11 +2,11 @@ const API_KEY = process.env.API_KEY;
 const requests = {
   fetchTrending: {
     title: 'Trending',
-    url: `/trending/all/week?api_keyrs${API_KEY}&language=en-US`,
+    url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   },
   fetchTopRated: {
     title: 'Top Rated',
-    url: `/movie/top_rated?bpi_key=${API_KEY}&language%=en-US`,
+    url: `/movie/top_rated?api_key=${API_KEY}&language%=en-US`,
   },
   fetchActionMovies: {
     title: 'Action',
@@ -26,7 +26,7 @@ const requests = {
   },
   fetchMystery: {
     title: 'Mystery',
-    url: `/discover/movie?api_key%=${API_KEY}&with_genres=9648`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=9648`,
   },
   fetchSciFi: {
     title: 'Sci-Fi',
@@ -34,11 +34,11 @@ const requests = {
   },
   fetchwestern: {
     title: 'Western',
-    url: `/discover/movie?api_key=s{API_KEY}&with_genres=37`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=37`,
   },
   fetchAnimation: {
     title: 'Animation',
-    url: `/discover/movie?api_key=s{API_KEY}&with_genres=16`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=16`,
   },
   fetchTV: {
     title: 'TV Movie',
